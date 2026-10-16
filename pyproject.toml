@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "inzoi.py"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Write inZOI mods in Python and compile them to Lua."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -41,6 +41,9 @@ dev = [
     "pyright>=1.1.390",
     "pytest>=8.3"
 ]
+
+[tool.hatch.version]
+path = "inzoi/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["inzoi"]
