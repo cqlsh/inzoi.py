@@ -1,0 +1,75 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "inzoi.py"
+version = "0.1.0"
+description = "Write inZOI mods in Python and compile them to Lua."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "LicenseRef-inzoi.py"
+license-files = ["LICENSE"]
+dependencies = []
+keywords = ["inzoi", "modding", "lua", "compiler", "transpiler"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Games/Entertainment :: Simulation",
+    "Topic :: Software Development :: Compilers",
+    "Typing :: Typed"
+]
+
+[project.urls]
+Repository = "https://github.com/cqlsh/inzoi.py"
+Issues = "https://github.com/cqlsh/inzoi.py/issues"
+
+[project.optional-dependencies]
+lua = ["lupa>=2.0"]
+
+[project.scripts]
+inzoi = "inzoi.cli.app:CliApp.main"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.13",
+    "pyright>=1.1.390",
+    "pytest>=8.3"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["inzoi"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-config", "--strict-markers", "--import-mode=importlib"]
+xfail_strict = true
+
+[tool.mypy]
+python_version = "3.12"
+files = ["inzoi"]
+strict = true
+warn_unreachable = true
+disallow_any_explicit = true
+enable_error_code = [
+    "explicit-override",
+    "ignore-without-code",
+    "possibly-undefined",
+    "redundant-expr",
+    "truthy-bool"
+]
+
+[tool.pyright]
+include = ["inzoi"]
+pythonVersion = "3.12"
+typeCheckingMode = "strict"
+reportImplicitOverride = "error"
+reportUninitializedInstanceVariable = "error"
+reportUnnecessaryTypeIgnoreComment = "error"
+reportPropertyTypeMismatch = "error"

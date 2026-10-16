@@ -1,0 +1,71 @@
+inzoi.py License
+Version 1.0
+
+Copyright (c) 2026-present cqlsh. All rights reserved.
+
+This license applies to inzoi.py (the "Software"), including its source code,
+documentation and all other files that are part of it.
+
+1. Use
+
+   You may download the Software, install it and use it free of charge, for
+   private and for commercial purposes. You may change the Software for your
+   own use.
+
+2. Mods
+
+   A "Mod" is a modification for the game inZOI that is made with the Software.
+   The "Output" of a Mod is everything the Software generates when it builds the
+   Mod, such as mod_manifest.json and Lua files, including any code the Software
+   copies into them.
+
+   You may publish, share and sell your Mods and their Output under any terms
+   you choose. You may also publish the source code of your Mods, including code
+   that imports the Software.
+
+3. Redistribution
+
+   You may redistribute unchanged copies of the Software, as long as they are
+   complete and include this license. You may not upload them to a package
+   index, such as the Python Package Index. The Software is published on
+   package indexes only by the copyright holder.
+
+   You may not redistribute changed versions of the Software, in whole or in
+   part. In particular, you may not upload a changed version to a package
+   index, a file host or any other place where others can download it, and you
+   may not bundle a changed version with a Mod, an application, an installer or
+   a container image.
+
+   Copies that package installers, caches and mirrors of the Python Package
+   Index create while installing the Software are always permitted. This
+   license does not limit the rights that the GitHub Terms of Service grant
+   other GitHub users for public repositories, such as viewing and forking on
+   GitHub.
+
+4. Contributions
+
+   If you submit a contribution to the Software, for example as a pull request,
+   you grant the copyright holder a perpetual, worldwide, royalty-free and
+   irrevocable license to use, change and distribute your contribution as part
+   of the Software under any terms, including this license.
+
+5. Trademarks
+
+   inZOI and KRAFTON are trademarks of their respective owners. This license
+   grants no rights to them. Mods must also follow the rules that the publisher
+   of inZOI sets for modding.
+
+6. Termination
+
+   If you break this license, your rights under it end automatically. Mods and
+   Output that you published lawfully before that may stay published.
+
+7. No warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.

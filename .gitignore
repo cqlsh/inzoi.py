@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Tool caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# inzoi.py
+.inzoi_cache/
+inzoi.toml
+
+# Editors
+.idea/
+.vscode/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini
